@@ -24,6 +24,12 @@
   display: block;
 }
 
+.selfie {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
 
 @media only screen and (min-width: 640px) {
   .icon-menu {
