@@ -1,36 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cathy Oun</title>
-    <link rel="stylesheet" href="css/icons.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/module.css" />
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/icons.css" />
     <link rel="stylesheet" href="css/normalize.css" />
 
     <script id="project-template" type="text/x-handlebars-template">
-
-
+      <project data-category="{{category}}">
+        <h2>{{title}}</h2>
+        <div class="byline">
+          Project: <a href="{{projectUrl}}">Click Me</a>
+        </div>
+        <div class="project-body">{{{body}}}</div>
+      </project>
     </script>
-
   </head>
 
   <body>
-    <header class="site-header">
-
+    <header class="site-header clearfix">
+      <h1>Cathy Oun</h1>
       <nav class="main-nav">
+        <div class="icon-menu"></div>
         <ul>
           <li class="tab" data-content="projects"><a href="#" class="icon-home"> Projects</a></li></li>
           <li class="tab" data-content="about"><a href="#" class="icon-home"> About</a></li></li>
-          <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/cathy810218/" target="_blank" class="icon-linkedin"> LinkedIn</a></li>
           <li><a href="http://github.com/cathy810218" target="_blank" class="icon-github"> GitHub</a></li>
-
         </ul>
       </nav>
-
     </header>
+
+    <main>
+      <section id="projects" class="tab-content">
+        <div>
+
+        </div>
+      </section>
+      <section id="about"
+    </main>
+
+
+    <footer>
+      &copy; 2017 Cathy Oun | Static Blog | Happy Ipsum!
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script src="scripts/projectObject.js"></script>

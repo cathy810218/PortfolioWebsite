@@ -1,0 +1,42 @@
+.icon-menu {
+  display: block;
+  float: right;
+  z-index: 1;
+  padding-top: -100px;
+  font-size: 2em;
+}
+
+.main-nav ul {
+  display: none;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav li {
+  padding-right: 5em;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+
+  .main-nav ul {
+    display: block;
+  }
+
+  .main-nav ul li {
+    display: inline;
+    border-bottom: none;
+    font-size: 2vw;
+  }
+}
