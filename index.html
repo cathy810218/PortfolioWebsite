@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="css/normalize.css" />
 
     <script id="project-template" type="text/x-handlebars-template">
-      <project data-category="{{category}}">
-        {{{icon}}}
-        <h2>{{title}}</h2>
-        <div class="byline">
-          Project: <a href="{{projectUrl}}">Click Me</a>
-        </div>
-        <div class="project-body">{{{body}}}</div>
-      </project>
+      <div class="project">
+        <project data-category="{{category}}">
+          {{{icon}}}
+          <h2>{{title}}</h2>
+          <div class="byline">
+            Project: <a href="{{projectUrl}}">Click Me</a>
+          </div>
+          <div class="project-body">{{{body}}}</div>
+        </project>
+      </div>
     </script>
   </head>
 
@@ -27,7 +29,6 @@
     <header class="site-header clearfix">
       <h1>Cathy Oun</h1>
 
-      <!-- <img class="selfie" src="images/myphoto.JPG" alt="myphoto" /> -->
       <nav class="main-nav">
         <div class="icon-menu"></div>
         <ul>
@@ -46,6 +47,7 @@
         </div>
       </section>
       <section id="about" class="tab-content">
+        <img class="selfie" src="images/myphoto.JPG" alt="myphoto" />
         <div>
           <p>
             I graduated with an electrical engineering degree at the University of Washington in spring 2015.
