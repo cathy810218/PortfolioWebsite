@@ -1,9 +1,8 @@
 .icon-menu {
   display: block;
   float: right;
-  z-index: 1;
-  padding-top: -100px;
   font-size: 2em;
+  margin: 10px 10px 10px 10px;
 }
 
 .main-nav ul {
@@ -46,6 +45,10 @@
   margin: 30px 50px 80px 50px;
   border-radius: 15px;
   padding: 20px 20px 20px 20px;
+}
+
+.project h2 {
+  margin: 30px 0px 0px 220px;
 }
 
 @media only screen and (min-width: 640px) {

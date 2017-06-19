@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cathy Oun</title>
+    <title>Cathy's Website</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/module.css" />
@@ -14,8 +14,8 @@
     <script id="project-template" type="text/x-handlebars-template">
       <div class="project">
         <project data-category="{{category}}">
-          {{{icon}}}
           <h2>{{title}}</h2>
+          <a>{{{icon}}}</a>
           <div class="byline">
             Project: <a href="{{projectUrl}}">Click Me</a>
           </div>
@@ -27,10 +27,9 @@
 
   <body>
     <header class="site-header clearfix">
-      <h1>Cathy Oun</h1>
-
       <nav class="main-nav">
         <div class="icon-menu"></div>
+        <h1>Cathy Oun</h1>
         <ul>
           <li class="tab" data-content="projects"><a href="#" class="icon-book"> Projects</a></li></li>
           <li class="tab" data-content="about"><a href="#" class="icon-home"> About</a></li></li>
