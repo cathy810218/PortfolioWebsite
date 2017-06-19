@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    // RWD
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cathy Oun</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/icons.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/module.css" />
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <script id="project-template" type="text/x-handlebars-template">
+
+
+    </script>
+
   </head>
+
   <body>
-    
+    <header class="site-header">
+
+      <nav class="main-nav">
+        <ul>
+          <li class="tab" data-content="projects"><a href="#" class="icon-home"> Projects</a></li></li>
+          <li class="tab" data-content="about"><a href="#" class="icon-home"> About</a></li></li>
+          <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
+          <li><a href="http://github.com/cathy810218" target="_blank" class="icon-github"> GitHub</a></li>
+
+        </ul>
+      </nav>
+
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <script src="scripts/projectObject.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/projectView.js"></script>
   </body>
 
 </html>
