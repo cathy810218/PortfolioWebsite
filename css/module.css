@@ -47,9 +47,9 @@
   padding: 20px 20px 20px 20px;
 }
 
-.project h2 {
+/*.project h2 {
   margin: 30px 0px 0px 220px;
-}
+}*/
 
 @media only screen and (min-width: 640px) {
   .icon-menu {

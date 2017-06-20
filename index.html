@@ -27,9 +27,9 @@
 
   <body>
     <header class="site-header clearfix">
+     <h1>Cathy Oun</h1>
       <nav class="main-nav">
         <div class="icon-menu"></div>
-        <h1>Cathy Oun</h1>
         <ul>
           <li class="tab" data-content="projects"><a href="#" class="icon-book"> Projects</a></li></li>
           <li class="tab" data-content="about"><a href="#" class="icon-home"> About</a></li></li>
@@ -46,7 +46,7 @@
         </div>
       </section>
       <section id="about" class="tab-content">
-        <img class="selfie" src="images/myphoto.JPG" alt="myphoto" />
+        <img class="selfie" src="images/myphoto.JPG" alt="myphoto" title="HI THIS IS ME" />
         <div>
           <p>
             I graduated with an electrical engineering degree at the University of Washington in spring 2015.
@@ -83,9 +83,11 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-    <script src="scripts/projectObject.js"></script>
     <script src="scripts/project.js"></script>
     <script src="scripts/projectView.js"></script>
+    <script>
+      Project.fetchAll();
+    </script>
   </body>
 
 </html>
