@@ -1,17 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    // RWD
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cathy Oun</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Cathy's Website</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/module.css" />
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <div class="project">
+        <project data-category="{{category}}">
+          <h2>{{title}}</h2>
+          <a>{{{icon}}}</a>
+          <div class="byline">
+            Project: <a href="{{projectUrl}}">Click Me</a>
+          </div>
+          <div class="project-body">{{{body}}}</div>
+        </project>
+      </div>
+    </script>
   </head>
+
   <body>
-    
+    <header class="site-header clearfix">
+     <h1>Cathy Oun</h1>
+      <nav class="main-nav">
+        <div class="icon-menu"></div>
+        <ul>
+          <li class="tab" data-content="projects"><a href="#" class="icon-book"> Projects</a></li></li>
+          <li class="tab" data-content="about"><a href="#" class="icon-home"> About</a></li></li>
+          <li><a href="https://www.linkedin.com/in/cathy810218/" target="_blank" class="icon-linkedin"> LinkedIn</a></li>
+          <li><a href="http://github.com/cathy810218" target="_blank" class="icon-github"> GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects" class="tab-content">
+        <div>
+
+        </div>
+      </section>
+      <section id="about" class="tab-content">
+        <img class="selfie" src="images/myphoto.JPG" alt="myphoto" title="HI THIS IS ME" />
+        <div>
+          <p>
+            I graduated with an electrical engineering degree at the University of Washington in spring 2015.
+  After graduating, I enrolled at Code Fellows for their iOS bootcamp program.
+  The iOS bootcamp program spanned 8 weeks requiring a full time commitment to successfully complete. I learned both Swift and Objective-C, and applied what I learned in 8 different projects of increasing complexity.
+  Upon graduating from Code Fellows, I immediately received a 3 month contract iOS dev position working on a t-shirt app for a local t-shirt company.
+          </p>
+
+          <p>
+            In early 2016, I got an offer from a startup company called Cardinal Blue - PicCollage.
+            I relocated to Taiwan to work as an iOS dev for almost a year.
+            Working at the startup company helped me grow as an individual and realize my passion.
+            I've not only learned coding skills, but how a successful team works together.
+            We had daily scrum meetings and two-week sprints. At the end of each sprint, we had retro to ensure good communications between devs, PMs and designers.
+            PicCollage also host hackdays for the team to pitch innovative new ideas in order to promote creativity and encourage team communication between different departments. At the deadline small teams would present their end product with outstanding concepts being considered for future use.
+          </p>
+
+          <p>
+            In March 2017 I moved back to Seattle to share my experience working as a full time iOS dev with current students at Code Fellows. As a graduate from their program, I wanted to inspire current students providing them with real world problems and strengthening their skills.
+            I really enjoy teaching and seeing students have an "A-ha!" moment that brings me joy knowing I have been a valuable resource for their future endeavors.
+          </p>
+          <p>
+            Please contact me if you're looking for an enthusiastic,
+            hard-working and easygoing iOS developer. :)
+          </p>
+
+        </div>
+      </section>
+    </main>
+
+
+    <footer>
+      &copy; 2017 Cathy Oun | Static Blog | Happy Ipsum!
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/projectView.js"></script>
+    <script>
+      Project.fetchAll();
+    </script>
   </body>
 
 </html>
